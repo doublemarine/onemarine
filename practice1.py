@@ -35,9 +35,15 @@ s=s.upper()
 s3='34'
 s4='43'
 print(len(s),int(s3)+int(s4),'文字を数値に')
-
-
+print('  タプル型は変更や追加削除ができない配列')
+tuple_w=list[0],list[-2]
+tup=list[1]
+list[1]=10
+#tuple_w[1]=10#先頭の#を外すとエラーになる
+print(type(tuple_w),type(tup))
+print(tuple_w,list)
 print('-------')
+
 list1=[1,2,3]
 list2=[4,5]
 list1.extend(list2)
@@ -50,3 +56,5 @@ list=[1,2,3,4,5]
 for tsil in list:
     if tsil % 2 ==0:        
         print(tsil,enumerate(list))
+
+
