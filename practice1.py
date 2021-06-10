@@ -4,11 +4,21 @@ Spyder Editor
 
 This is a temporary script file.
 """
+co=0
+while 1==1:
+    co+=1
+    if co%3==0:
+        continue#continue以下をスキップしてループ再開
+    if co==10:
+        print(' ')
+        break
+    print(co,'  ',end="")
 
 x = 20
 a = 12
 a, x = x, a
-print(a, x, '  ', a+x, a-x, a*x, a/x, a//x, a % x)
+co=int(a/x)
+print(a, x, '  ', a+x, a-x, a*x, a/x, a//x, a % x,'  ',co)
 b = 2
 y = 3
 print('--------\n', b**y)
@@ -45,9 +55,11 @@ if 100 in list1:
 print(list1,list1[3],len(list1))
 list=[1,2,3,4,5,6,7,8,9]
 print(list[1:4],list[0::2],list[1:6:2])
+print('end=""を入れると',end="")
+print('print関数出力時に改行しない')
+
 d={'A':1, 'B':2, 'C':3, 'D':4, 'E':5}
 print(d)
-
 
 
 """
