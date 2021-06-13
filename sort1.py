@@ -3,28 +3,28 @@
 Created on Tue Jun  8 22:40:35 2021
 
 @author: USER
-
 a = int(input('a='))
 """
+dic={'A':1,'B':2,'C':3,'D':4,'E':5}
+print(dic)
+print('key==',list(dic.keys()),'values==',list(dic.values()))
+print(list(dic.items()))
+dic['E']=dic.get('E',-1)
+dic['F']=dic.get('F',-1)
+print(dic,'/n')
 
-list=[2,6,7,8,12,22,26,29,30,50]
-l=0
-r=9#
-n=29#
-while(l<=r):
-    m=(l+r)/2
-    m=int(m)
-    if(list[m]==n):
-        ans=m
-    elif(list[m]<n):
-        l=m+1
-    else:
-        r=m-1
-print(ans)
+slice='0123456789'
+s01=(slice[1:5])
+s02=(slice[1:6:2])
+s03=(slice[::-1])
+print('slice[配列] a:b:cの時,aからb-1までの範囲を,c-1コの要素を飛ばす')
+print(s01,s02,s03,'\n')
 
-#Reloaded modules: jupyter_client.session, zmq.eventloop, zmq.eventloop.ioloop,
-#tornado.platform, tornado.platform.asyncio, tornado.gen, zmq.eventloop.
-#zmqstream, jupyter_client.jsonutil, jupyter_client.adapter, spyder, 
-#spyder.pil_patch, PIL, PIL._version, PIL.Image, PIL.ImageMode, PIL.TiffTags,
-# PIL._binary, PIL._util, PIL._imaging, cffi, cffi.api, cffi.lock, 
-#cffi.error, cffi.model
+ss=[0,1,1,2,0,2]
+set=set(ss)
+set1={1,2,3,4,5}
+set2={3,4,5,6,7}
+print(ss,set,'\n積集合->',set1&set2,'和集合->',set1|set2,'差集合->',set1-set2)
+moji='apex'
+print(type(moji),type(dic),type(set))
+
