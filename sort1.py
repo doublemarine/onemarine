@@ -28,3 +28,8 @@ print(ss,set,'\n積集合->',set1&set2,'和集合->',set1|set2,'差集合->',set
 moji='apex'
 print(type(moji),type(dic),type(set))
 
+listing=[11,2,7,13,5]
+print(max(listing),min(listing),sum(listing))
+sorted_listing=sorted(listing)#sorted_名前=sorted(名前)　にしないとエラー？？
+print(sorted_listing)#降順もできるらしい
+
