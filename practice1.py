@@ -52,14 +52,19 @@ list1.append(6)
 list1.insert(0,100)
 if 100 in list1:
     print('100がリスト内に存在する')
-print(list1,list1[3],len(list1))
+print(list1,'  三番目の要素は',list1[3],'  リストの要素の数は',len(list1))
+
 list=[1,2,3,4,5,6,7,8,9]
 print(list[1:4],list[0::2],list[1:6:2])
+
 print('end=""を入れると',end="")
 print('print関数出力時に改行しない')
 
-d={'A':1, 'B':2, 'C':3, 'D':4, 'E':5}
-print(d)
+
+
+
+
+
 
 
 """
