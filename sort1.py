@@ -1,12 +1,10 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jun  8 22:40:35 2021
 
-@author: USER
-a = int(input('a='))
-"""
+
+
 dic={'A':1,'B':2,'C':3,'D':4,'E':5}
-print(dic)
+dic.setdefault('F',6)
+print(dic,dic.values(),dic.keys())    
+print(dic.get('F','値が登録されていません'))
 print('key==',list(dic.keys()),'values==',list(dic.values()))
 print(list(dic.items()))
 dic['E']=dic.get('E',-1)
